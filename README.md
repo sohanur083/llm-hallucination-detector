@@ -1,3 +1,5 @@
+<p align="center"><img src="assets/hero.svg" alt="LLM Hallucination Detector" width="100%" /></p>
+
 # 🧠 LLM Hallucination Detector
 
 > **Detect hallucinations in any LLM output in one line of Python.** Zero-config, model-agnostic, research-grade.

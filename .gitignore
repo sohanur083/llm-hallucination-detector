@@ -10,3 +10,6 @@ dist/
 Thumbs.db
 .vscode/
 .idea/
+dist/
+build/
+*.egg-info/

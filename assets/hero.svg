@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400" width="1200" height="400" role="img" aria-label="llm-hallucination-detector">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0a0a0f"/>
+      <stop offset="1" stop-color="#14141c"/>
+    </linearGradient>
+    <linearGradient id="grad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c5cff"/>
+      <stop offset="0.5" stop-color="#00d4ff"/>
+      <stop offset="1" stop-color="#ff5cac"/>
+    </linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3"/></filter>
+  </defs>
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <g opacity="0.08">
+    <path d="M 0 100 Q 300 50 600 100 T 1200 100" stroke="#7c5cff" stroke-width="1.5" fill="none"/>
+    <path d="M 0 200 Q 300 150 600 200 T 1200 200" stroke="#00d4ff" stroke-width="1.5" fill="none"/>
+    <path d="M 0 300 Q 300 250 600 300 T 1200 300" stroke="#ff5cac" stroke-width="1.5" fill="none"/>
+  </g>
+  <g transform="translate(60, 90)">
+    <text font-family="ui-monospace, Consolas, monospace" font-size="13" fill="#00d4ff" letter-spacing="2" opacity="0.9">TRUSTWORTHY AI · RESEARCH-GRADE</text>
+    <text y="66" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="70" fill="url(#grad)" letter-spacing="-2">llm-hallucination</text>
+    <text y="130" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="70" fill="#ffffff" letter-spacing="-2">-detector</text>
+    <text y="180" font-family="Space Grotesk, sans-serif" font-size="22" fill="#a0a3b0">Detect hallucinations in any LLM output. One line of Python.</text>
+    <g transform="translate(0, 210)" font-family="ui-monospace, monospace" font-size="14">
+      <rect width="560" height="76" fill="#07070d" stroke="#2a2a32" rx="8"/>
+      <text x="20" y="28" fill="#ff5cac">&gt;&gt;&gt;</text>
+      <text x="55" y="28" fill="#e8e9ee">from llm_hallucination_detector import detect</text>
+      <text x="20" y="58" fill="#ff5cac">&gt;&gt;&gt;</text>
+      <text x="55" y="58" fill="#e8e9ee">detect(q, answer, context).verdict</text>
+      <text x="55" y="58" text-anchor="start" fill="#5ff08d">                                    # FAITHFUL</text>
+    </g>
+  </g>
+  <g transform="translate(780, 150)" font-family="ui-monospace, monospace" font-size="14" fill="#a0a3b0">
+    <circle cx="180" cy="60" r="90" fill="none" stroke="#7c5cff" stroke-width="2" opacity="0.5"/>
+    <circle cx="180" cy="60" r="60" fill="none" stroke="#00d4ff" stroke-width="2" opacity="0.6"/>
+    <circle cx="180" cy="60" r="30" fill="url(#grad)"/>
+    <text x="180" y="66" text-anchor="middle" font-family="Space Grotesk" font-weight="700" font-size="22" fill="#0a0a0f">NLI</text>
+    <text x="60" y="180" font-size="12">+ self-consistency</text>
+    <text x="60" y="202" font-size="12">+ retrieval grounding</text>
+    <text x="60" y="224" font-size="12" fill="#5ff08d">= faithfulness score</text>
+  </g>
+</svg>
